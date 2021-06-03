@@ -1,0 +1,50 @@
+[
+    {
+        "EndpointUrl": "opc.tcp://host.docker.internal:50000",
+        "UseSecurity": false,
+        "OpcEvents": [
+            {
+                "Id": "ns=0;i=2253",
+                "DisplayName": "SimpleEvents",
+                "SelectClauses": [
+                    {
+                        "TypeDefinitionId": "i=2041",
+                        "BrowsePath": [
+                            "EventId"
+                        ]
+                    },
+                    {
+                        "TypeDefinitionId": "i=2041",
+                        "BrowsePath": [
+                            "Message"
+                        ]
+                    },
+                    {
+                        "TypeDefinitionId": "nsu=http://microsoft.com/Opc/OpcPlc/SimpleEvents;i=2",
+                        "BrowsePath": [
+                            "http://microsoft.com/Opc/OpcPlc/SimpleEvents#CycleId"
+                        ]
+                    },
+                    {
+                        "TypeDefinitionId": "nsu=http://microsoft.com/Opc/OpcPlc/SimpleEvents;i=2",
+                        "BrowsePath": [
+                            "http://microsoft.com/Opc/OpcPlc/SimpleEvents#CurrentStep"
+                        ]
+                    }
+                ],
+                "WhereClause": {
+                    "Elements": [
+                        {
+                            "FilterOperator": "OfType",
+                            "FilterOperands": [
+                                {
+                                    "Value": "nsu=http://microsoft.com/Opc/OpcPlc/SimpleEvents;i=2"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+]

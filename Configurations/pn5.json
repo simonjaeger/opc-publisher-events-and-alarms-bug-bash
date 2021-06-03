@@ -1,0 +1,18 @@
+[
+    {
+        "EndpointUrl": "opc.tcp://host.docker.internal:50000",
+        "UseSecurity": false,
+        "OpcEvents": [
+            {
+                "Id": "ns=0;i=2253",
+                "DisplayName": "PendingAlarms",
+                "TypeDefinitionId": "i=2915",
+                "PendingAlarms": {
+                    "IsEnabled": true,
+                    "UpdateInterval": 10,
+                    "CompressedPayload": true
+                }
+            }
+        ]
+    }
+]

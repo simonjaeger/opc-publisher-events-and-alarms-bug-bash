@@ -1,0 +1,13 @@
+[
+    {
+        "EndpointUrl": "opc.tcp://host.docker.internal:50000",
+        "UseSecurity": false,
+        "OpcEvents": [
+            {
+                "Id": "ns=0;i=2253",
+                "DisplayName": "AlarmsAndConditions",
+                "TypeDefinitionId": "i=10751"
+            }
+        ]
+    }
+]
